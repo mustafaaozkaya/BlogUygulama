@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="container">
+
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+            <h1 class="my-4">
+                VerBiTeklifBlog
+                <small>Hayat Paylastikca Guzel...</small>
+            </h1>
+
+            <!-- Blog Post -->
+            <div class="card mb-4">
+                <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">Blog Basligi</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <a href="#" class="btn btn-primary">Devamini Oku...</a>
+                </div>
+                <div class="card-footer text-muted ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <i class="far fa-clock"></i>
+                            @DateTime.Now
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <i class="fas fa-user"></i>
+                            <a href="#">.....Kullanici Adi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">Blog Basligi</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <a href="#" class="btn btn-primary">Devamini Oku...</a>
+                </div>
+                <div class="card-footer text-muted ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <i class="far fa-clock"></i>
+                            @DateTime.Now
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <i class="fas fa-user"></i>
+                            <a href="#">.....Kullanici Adi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">Blog Basligi</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <a href="#" class="btn btn-primary">Devamini Oku...</a>
+                </div>
+                <div class="card-footer text-muted ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <i class="far fa-clock"></i>
+                            @DateTime.Now
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <i class="fas fa-user"></i>
+                            <a href="#">.....Kullanici Adi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <ul class="pagination justify-content-center mb-4">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">&lt; Onceki</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Sonraki &gt;</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Search Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Arama</h5>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Arama Yapin...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Git!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Widget -->
+            @*<div class="card my-4">
+                <h5 class="card-header">Kategoriler</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">Alis-Veris</a>
+                                </li>
+                                <li>
+                                    <a href="#">Moda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Seyahat</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">Spor</a>
+                                </li>
+                                <li>
+                                    <a href="#">Is Hayati</a>
+                                </li>
+                                <li>
+                                    <a href="#">Teknoloji</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+
+
+            @Html.Action("KategorileriGetir", "Category")
+
+            <!-- Side Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Blog Etiketleri</h5>
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+

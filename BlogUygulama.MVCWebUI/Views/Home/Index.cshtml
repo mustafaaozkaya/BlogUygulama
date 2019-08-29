@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BlogUygulama.Entities.Concrete.Blog>
+@{
+    ViewBag.Title = "Index";
+}
+@if (Request.QueryString["Mesaj"] !=null)
+{
+    <p style="color: green"> @Request.QueryString["Mesaj"].ToString()</p>
+}
+<h2>Index</h2>
+@foreach (var i in Model)
+{
+    <p>@i.Aciklama</p>
+}

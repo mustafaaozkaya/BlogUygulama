@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@if (Request.QueryString["Mesaj"] != null)
+{
+    <p style="color: green"> @Request.QueryString["Mesaj"].ToString()</p>
+}
+<form method="post" action="@Url.Action("Kaydet","Category")">
+    <input type="text" name="KategoriAdi" />
+    <input type="submit" value="Kaydet" />
+</form>

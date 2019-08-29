@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VerBiTeklifBlog</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <script src="https://kit.fontawesome.com/e34a2cb2b0.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid mx-4 ">
+        <a class="navbar-brand" href="#">VerBiTeklifBlog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  mr-auto" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-wrench"></i>
+                        Yonetim
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        Ana Sayfa
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Hakkımızda
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Bize Ulaşın
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+            <ul class="navbar-nav align-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user-plus"></i>
+                        Uye Ol
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Uye Girisi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user"></i>
+                        Kullanici Adi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Cikis Yap
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+@RenderBody()
+
+<!-- Footer -->
+
+<footer class="py-5 bg-dark">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="row text-white">
+                <div class="col-md-4 text-center ">
+                    <h4 class=" mb-4">
+                        Faydali Linkler
+                    </h4>
+                    <hr class="bg-white mx-3" />
+                    <ul id="footerLinks" class="row m-0 p-0 mb-4">
+                        <li class="col-sm-3  d-inline text-center">
+                            <a href="#">Link1</a>
+                        </li>
+                        <li class="col-sm-3  d-inline text-center">
+                            <a href="#">Link2</a>
+                        </li>
+                        <li class="col-sm-3  d-inline text-center">
+                            <a href="#">Link3</a>
+                        </li>
+                        <li class="col-sm-3  d-inline text-center">
+                            <a href="#">Link3</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-center mb-4">
+                        Sosyal Medya Hesaplarimiz
+                    </h4>
+                    <hr class="bg-white mx-3" />
+                    <div class="container bg-dark">
+                        <ul class="row pr-5 ">
+                            <li class="list-unstyled d-inline col-3 text-center  ">
+                                <button class="btn btn-outline-dark btn-lg">
+                                    <i class="fab fa-facebook-f text-white"></i>
+                                </button>
+                            </li>
+                            <li class="list-unstyled d-inline col-3 text-center">
+                                <button class="btn btn-outline-dark btn-lg">
+                                    <i class="fab fa-twitter text-white"></i>
+
+                                </button>
+                            </li>
+                            <li class="list-unstyled d-inline col-3 text-center">
+                                <button class="btn btn-outline-dark btn-lg">
+                                    <i class="fab fa-google-plus-g text-white"></i>
+
+                                </button>
+                            </li>
+                            <li class="list-unstyled d-inline col-3 text-center">
+                                <button class="btn btn-outline-dark btn-lg ">
+                                    <i class="fab fa-linkedin-in text-white"></i>
+
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-center mb-4">
+                        Adres
+                    </h4>
+                    <hr class="bg-white mx-3" />
+                    <p class="mx-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr class="bg-white mx-3" />
+    <div class="row">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; VerBiTeklif Her Hakki Saklidir... @DateTime.Now.Year</p>
+        </div>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+
+
